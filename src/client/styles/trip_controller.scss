@@ -1,0 +1,35 @@
+.trip_controller {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  margin: 1rem;
+
+  .element_myTrip {
+    color: #02ccba;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+
+  
+  .element_addTrip {
+    button {
+      background-color: #02ccba;
+      color: white;
+      border-radius: 1rem;
+      padding: 0 0.5rem;
+      margin: 0 0.3rem;
+      border: none;
+      transition: background-color 0.5s;
+      &:hover{
+        background-color: #02ccbaa1;
+        transform: translate(0px, -2px);
+        transform: scale(1.1, 1.1);
+      }
+      i {
+        padding: 0.3rem;
+      }
+    }
+    
+  }
+}

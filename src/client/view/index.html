@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel App</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- wrapper -->
+    <div class="wrapper">
+      <!-- heading -->
+      <header class="heading">
+        Travel Planner
+      </header>
+
+      <!-- main content -->
+      <main>
+        <!-- My trips: and add trip -->
+        <section class="trip_controller">
+          <div class="element_myTrip">My Trip:</div>
+          <div class="element_addTrip">
+            <button>
+              <i class="fa fa-plus" aria-hidden="true"></i>add a trip
+            </button>
+          </div>
+        </section>
+
+        <!-- model for adding trip -->
+        <section class="model">
+          <div class="model_addTrip_bg">
+            <div class="model_addTrip">
+              <form class="form_addTrip">
+                <div class="input_tripTo">
+                  <label for="tripTo">My trip to:</label>
+                  <input type="text" name="tripTo" id="tripTo" />
+                </div>
+                <div class="input_dep">
+                  <label for="dep">Departing:</label>
+                  <input type="date" name="dep" id="dep" />
+                </div>
+                <input type="submit" value="submit" />
+                <span class="cancel"
+                  ><i class="fa fa-times" aria-hidden="true"></i
+                ></span>
+              </form>
+            </div>
+          </div>
+        </section>
+        <section class="empty_container"><p class="empty">Kindly add a trip.</p></section>
+        
+        <!-- trip collection container -->
+        <section class="trip">
+          <!-- image section -->
+          <div class="img_section">
+            <!-- image -->
+            <img src=".././assets/photo.png" alt="paris" />
+
+            <!-- lists -->
+
+            <!-- add pack -->
+            <button class="accordion_pack">
+              <i class="fa fa-plus" aria-hidden="true"></i>add packing list
+            </button>
+            <div class="container_pack">
+              <form class="form_pack">
+                <div class="input_add">
+                  <input type="text" name="addPack" id="addPack" /><i
+                    class="fa fa-plus-circle"
+                    aria-hidden="true"
+                  ></i>
+                </div>
+              </form>
+              <div class="packs">
+                <span>Shoes<i class="fa fa-times" aria-hidden="true"></i></span
+                ><span
+                  >Camera<i class="fa fa-times" aria-hidden="true"></i
+                ></span>
+              </div>
+            </div>
+
+            <!-- add notes -->
+            <button class="accordion_note">
+              <i class="fa fa-plus" aria-hidden="true"></i>add notes
+            </button>
+            <div class="container_note">
+              <form class="form_note">
+                <div class="input_note">
+                  <input type="text" name="addNote" id="addNote" /><i
+                    class="fa fa-plus-circle"
+                    aria-hidden="true"
+                  ></i>
+                </div>
+              </form>
+              <div class="notes">
+                <span
+                  >Pick up your Visa<i
+                    class="fa fa-times"
+                    aria-hidden="true"
+                  ></i></span
+                ><span
+                  >Book the ticket<i class="fa fa-times" aria-hidden="true"></i
+                ></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- info section -->
+          <div class="info_section">
+            <!-- loaction -->
+            <div class="info_location">
+              <span class="info_text"><i class="fa fa-road" aria-hidden="true"></i>My trip to:</span> <span class="location">-------</span>
+            </div>
+            <!-- time -->
+            <div class="info_time">
+              <span class="info_text"><i class="fa fa-plane" aria-hidden="true"></i>Departing: </span> <span class="time">-----</span>
+            </div>
+            <!-- days left -->
+            <div class="info_left">-------- is ---- days away</div>
+            <!-- weather -->
+            <div class="info_weather">
+            </div>
+            <!-- delete -->
+            <button class="delete">
+              <i class="fa fa-trash-o" aria-hidden="true"></i>Delete
+            </button>
+          </div>
+        </section>
+        <hr />
+
+        <section class="end_controller">
+          <p>
+            Thanks for using our website for making your wonderfull trip. You
+            can take a print of your plan or delete all the plans to make a new
+            one(it does not hurt to make it one more time ;p).
+          </p>
+          <div class="element_icon">
+            <button class="element_deleteAll">
+              <i class="fa fa-trash-o" aria-hidden="true"></i>delete all
+            </button>
+            <button class="element_print">
+              <i class="fa fa-print" aria-hidden="true"></i>print
+            </button>
+          </div>
+        </section>
+      </main>
+
+      <footer class="foot"><p>Made with 🍷 by Gowthamaraj</p></footer>
+    </div>
+
+    <!-- <script>
+      if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/service-worker.js').then(registration =>{
+              console.log('SW registered successfuly: ', registration);
+          });
+      });
+      }else{
+      console.log("Service Working not supported");
+          }
+</script>  -->
+<script src="http://cdn.date-fns.org/v1.8.0/date_fns.min.js"></script>
+<script>
+</script>
+  </body>
+</html>

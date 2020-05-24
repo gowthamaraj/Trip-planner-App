@@ -1,0 +1,80 @@
+.container_pack{
+    margin-bottom: 1rem;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.5s;
+    .form_pack{
+        input{
+            width: 80%;
+            border-radius: .5rem;
+            border: none;
+            outline: none;
+            padding: 0.1rem;
+            margin: 0.5rem;
+            margin-right: .5rem;
+        }
+        i{
+            cursor: pointer;
+        }
+    }
+    .packs{
+        margin: 0 0.5rem;
+        span{
+            background-color: #02B3E4;
+            border-radius: .5rem;
+            display: inline-block;
+            padding: .2rem;
+            margin: 0.2rem 0;
+            margin-right: 0.5rem;
+            i{
+                padding: 0 0.5rem;
+                color: white;
+                cursor: pointer;
+            }
+        }
+    }
+}
+.container_pack_active{
+    height: 6rem;
+    overflow: auto;
+}
+
+.container_note{
+    height: 0;
+    overflow: hidden;
+    transition: height .5s;
+    .form_note{
+        input{
+            width: 80%;
+            border-radius: .5rem;
+            outline: none;
+            padding: 0.1rem;
+            border: none;
+            margin: 0.5rem;
+            margin-right: .5rem;
+        }
+        i{
+            cursor: pointer;
+        }
+    }
+    .notes{
+        margin: 0 0.5rem;
+        span{
+            background-color: #02B3E4;
+            border-radius: .5rem;
+            display: inline-block;
+            padding: .2rem;
+            margin: 0.2rem 0;
+            margin-right: 0.5rem;
+            i{
+                padding: 0 0.5rem;
+                color: white;
+                cursor: pointer;
+            }
+        }
+    }
+}
+.container_note_active{
+    height: 6rem;
+    overflow: auto; 
+}

@@ -1,0 +1,42 @@
+.end_controller {
+  margin: 1rem;
+  font-size: 1.4rem;
+  color: aliceblue;
+  .element_icon {
+    text-align: center;
+    .element_deleteAll {
+      background-color: #dd3131;
+      color: white;
+      width: fit-content;
+      border-radius: 0.2rem;
+      padding: 0 0.5rem;
+      margin: 0.3rem;
+      border: none;
+      i {
+        padding: 0.3rem;
+      }
+      &:hover{
+        background-color: #dd3131b3;
+        transform: translate(0px, -2px);
+        transform: scale(1.1, 1.1);
+      }
+    }
+    .element_print {
+      background-color: #15c26b;
+      color: white;
+      align-self: flex-end;
+      border-radius: 0.2rem;
+      padding: 0 0.5rem;
+      margin: 0.5rem 0.3rem;
+      border: none;
+      i {
+        padding: 0.3rem;
+      }
+      &:hover{
+        background-color: #15c26b96;
+        transform: translate(0px, -2px);
+        transform: scale(1.1, 1.1);
+      }
+    }
+  }
+}
