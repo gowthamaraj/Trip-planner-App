@@ -5,7 +5,7 @@ const right = document.querySelector('.images .right');
 //to keep track of the photo in the images section
 count = 1;
 //width of the frame 
-width = images[0].width;
+width = 200;
 
 //to move the slider block in x direction for a length of width*count 
 right.addEventListener("click",(e)=>{
