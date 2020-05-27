@@ -7,8 +7,7 @@ const notes = document.querySelector('.notes');
 const add_click_packs = document.querySelector('.form_pack i');
 const add_click_notes = document.querySelector('.form_note i');
 
-// adding eventlisteners
-
+//to make the accordian for adding packing lists
 add_Pack.addEventListener('click', e => {
     if(!add_Pack.nextElementSibling.classList.contains('container_pack_active')){
          add_Pack.nextElementSibling.classList.add('container_pack_active');
@@ -16,6 +15,8 @@ add_Pack.addEventListener('click', e => {
         add_Pack.nextElementSibling.classList.remove('container_pack_active');
     }   
 });
+
+//to make the accordian for adding notes lists
 add_Note.addEventListener('click', e => {
     if(!add_Note.nextElementSibling.classList.contains('container_note_active')){
          add_Note.nextElementSibling.classList.add('container_note_active');
@@ -24,6 +25,8 @@ add_Note.addEventListener('click', e => {
     }   
 });
 
+
+//to add values in the packing and list sections on pressing "enter" in the input field
 form_pack.addEventListener('submit', e => {
     e.preventDefault();
     const val = form_pack.addPack.value.trim();
@@ -37,6 +40,7 @@ form_note.addEventListener('submit', e => {
     form_note.reset();
 })
 
+//to add values in the packing and list sections on clicking "+" near the input field
 add_click_packs.addEventListener('click', e => {
     const val = form_pack.addPack.value.trim();
     packs.innerHTML += `<span>${val}<i class="fa fa-times" aria-hidden="true"></i></span`;
@@ -49,6 +53,8 @@ add_click_notes.addEventListener('click', e => {
     form_note.reset();
 })
 
+
+//for deleting the items in the paking and notes list
 packs.addEventListener('click', e => {
     if(e.target.tagName === "I"){
         e.target.parentElement.remove();

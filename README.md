@@ -42,7 +42,7 @@ Testing is done with Jest. To run test, use the command
 ### Home page
 ![](screenshots/laptop.PNG)
 
-![](screenshots/form.png)
+![](screenshots/form.PNG)
 It is a single page web app. It has a single form input field that accepts user input(city), then runs a check to make sure it is valid. If it is not valid, it will return back. If not, it will fetch the data using the API and display it to us.
 
 ##### In Mobiles

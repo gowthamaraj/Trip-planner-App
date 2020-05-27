@@ -5,6 +5,7 @@
     transition: height 0.5s;
     .form_pack{
         input{
+            //rounded and no outlines on focus
             width: 80%;
             border-radius: .5rem;
             border: none;
@@ -20,6 +21,7 @@
     .packs{
         margin: 0 0.5rem;
         span{
+            //style for the list items inside the pack section
             background-color: #02B3E4;
             border-radius: .5rem;
             display: inline-block;
@@ -60,6 +62,7 @@
     .notes{
         margin: 0 0.5rem;
         span{
+            //style for the list items inside the notes section
             background-color: #02B3E4;
             border-radius: .5rem;
             display: inline-block;

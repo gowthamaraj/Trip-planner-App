@@ -1,5 +1,5 @@
 {
-  "name": "Capstone-Travel-App",
+  "name": "travel-planner-app",
   "version": "1.0.0",
   "description": "This project is about building out a travel app that obtains a desired trip location &amp; date from the user, and displays weather and an image of the location using information obtained from external APIs.",
   "main": "index.js",

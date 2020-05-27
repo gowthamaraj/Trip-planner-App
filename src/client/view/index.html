@@ -21,12 +21,13 @@
 
       <!-- main content -->
       <main>
-        <!-- My trips: and add trip -->
+        <!-- My trips: and add trip container-->
         <section class="trip_controller">
           <div class="element_myTrip">My Trip:</div>
-          <div class="element_addTrip">
+          <div class="element_addTrip" >
+            <!-- button for adding trip or updating trip -->
             <button>
-              <i class="fa fa-plus" aria-hidden="true"></i>add a trip
+              <i class="fa fa-plus" aria-hidden="true"></i>add/update a trip
             </button>
           </div>
         </section>
@@ -52,14 +53,23 @@
             </div>
           </div>
         </section>
-        <section class="empty_container"><p class="empty">Kindly add a trip.</p></section>
-        
+        <section class="empty_container">
+          <p class="empty">Kindly add a trip.</p>
+        </section>
+
         <!-- trip collection container -->
-        <section class="trip">
+        <section class="trip trip_visible">
           <!-- image section -->
           <div class="img_section">
             <!-- image -->
-            <img src=".././assets/photo.png" alt="paris" />
+            <div class="images">
+              <div class="slider">
+                <img class="image1" src=".././assets/photo.png" alt="image1" />
+                <img class="image2" src=".././assets/photo.png" alt="image2" />
+                <img class="image3" src=".././assets/photo.png" alt="image3" />
+              </div>
+              <span class="right"><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+            </div>
 
             <!-- lists -->
 
@@ -68,6 +78,7 @@
               <i class="fa fa-plus" aria-hidden="true"></i>add packing list
             </button>
             <div class="container_pack">
+              <!-- add form -->
               <form class="form_pack">
                 <div class="input_add">
                   <input type="text" name="addPack" id="addPack" /><i
@@ -76,6 +87,7 @@
                   ></i>
                 </div>
               </form>
+              <!-- list adding section -->
               <div class="packs">
                 <span>Shoes<i class="fa fa-times" aria-hidden="true"></i></span
                 ><span
@@ -89,6 +101,7 @@
               <i class="fa fa-plus" aria-hidden="true"></i>add notes
             </button>
             <div class="container_note">
+              <!-- form for adding lists -->
               <form class="form_note">
                 <div class="input_note">
                   <input type="text" name="addNote" id="addNote" /><i
@@ -97,6 +110,7 @@
                   ></i>
                 </div>
               </form>
+              <!-- section for adding lists -->
               <div class="notes">
                 <span
                   >Pick up your Visa<i
@@ -114,17 +128,26 @@
           <div class="info_section">
             <!-- loaction -->
             <div class="info_location">
-              <span class="info_text"><i class="fa fa-road" aria-hidden="true"></i>My trip to:</span> <span class="location">-------</span>
+              <span class="info_text"
+                ><i class="fa fa-road" aria-hidden="true"></i>My trip to:</span
+              >
+              <span class="location">(updating.....)</span>
             </div>
             <!-- time -->
             <div class="info_time">
-              <span class="info_text"><i class="fa fa-plane" aria-hidden="true"></i>Departing: </span> <span class="time">-----</span>
+              <span class="info_text"
+                ><i class="fa fa-plane" aria-hidden="true"></i>Departing:
+              </span>
+              <span class="time">(updating.....)</span>
             </div>
             <!-- days left -->
-            <div class="info_left">-------- is ---- days away</div>
-            <!-- weather -->
-            <div class="info_weather">
+            <div class="info_left">
+              <i class="fa fa-dot-circle-o" aria-hidden="true"></i>
+              <span class="info_left_city">(updating.....)</span> is
+              <span class="info_left_daysLeft">(updating.....)</span> days away
             </div>
+            <!-- weather -->
+            <div class="info_weather"></div>
             <!-- delete -->
             <button class="delete">
               <i class="fa fa-trash-o" aria-hidden="true"></i>Delete
@@ -139,10 +162,12 @@
             can take a print of your plan or delete all the plans to make a new
             one(it does not hurt to make it one more time ;p).
           </p>
+          <!-- delete all the content inside trip -->
           <div class="element_icon">
             <button class="element_deleteAll">
               <i class="fa fa-trash-o" aria-hidden="true"></i>delete all
             </button>
+            <!-- for print things in the page -->
             <button class="element_print">
               <i class="fa fa-print" aria-hidden="true"></i>print
             </button>
@@ -164,8 +189,7 @@
       console.log("Service Working not supported");
           }
 </script>  -->
-<script src="http://cdn.date-fns.org/v1.8.0/date_fns.min.js"></script>
-<script>
-</script>
+    <script src="http://cdn.date-fns.org/v1.8.0/date_fns.min.js"></script>
+    <script></script>
   </body>
 </html>
