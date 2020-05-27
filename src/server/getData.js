@@ -12,10 +12,31 @@ const getAllData = async (city,dep,future) => {
     //get some pics url from pixabay using the city parameter given to the function
     const imageRes = await fetch(`https://pixabay.com/api/?key=16702619-050e1a8f9aa4137888285d80c&q=${city}+city&image_type=photo`);
     const imageData = await imageRes.json();
+
+    let image1,image2,image3;
     //3 images for carousal effect
-    const image1 = imageData.hits[0].webformatURL;
-    const image2 = imageData.hits[1].webformatURL;
-    const image3 = imageData.hits[2].webformatURL;
+    //if the image is there, update it to the recieved image, or use the default image
+    if(typeof imageData.hits[0] !== 'undefined'){
+    image1 = imageData.hits[0].webformatURL;
+    }
+    else{
+     image1 = 'https://pixabay.com/get/57e8d6454e53a914f1dc846096293179153dd8e45a4c704c7c2f7ed3914cc65e_640.jpg';
+    }
+    //if the image is there, update it to the recieved image, or use the default image
+    if(typeof imageData.hits[1] !== 'undefined'){
+    image2 = imageData.hits[1].webformatURL;
+    }
+    else{
+     image2 = 'https://pixabay.com/get/57e8d6454e53a914f1dc846096293179153dd8e45a4c704c7c2f7ed3914cc65e_640.jpg';
+    }
+    //if the image is there, update it to the recieved image, or use the default image
+    if(typeof imageData.hits[2] !== 'undefined'){
+    image3 = imageData.hits[2].webformatURL;
+    }
+    else{
+      image3 = 'https://pixabay.com/get/57e8d6454e53a914f1dc846096293179153dd8e45a4c704c7c2f7ed3914cc65e_640.jpg';
+    }
+   
 
     // calculate the number of days left, so to pass for weather prediction on that particular day
     let daysLeft = (future - Now)/86400;
