@@ -27,6 +27,18 @@ To start the node server, use the command given below.
 ```sh
 ` $ npm run start`
 ```
+
+
+### .env file
+We need API key for the services we are going to use. (Geonames,Pixabay,weatherbit)
+#### Steps:
+1. Create account and get the key from the API providers.(Geonames,Pixabay,weatherbit)
+2. Create a file named '.env' to store the API keys.
+3. import the file using a module called 'dotenv' in the node server file.
+4. Inside the .env file, save `API_GEO={API key}`, `API_PIX={API key}` and `API_BIT={API key}` in individual lines.
+
+
+
 ## Configs
 I have made 2 webpack config files for both development mode(`webpack.config.dev.js`) and production mode(`webpack.config.prod.js` )
 
